@@ -5,7 +5,7 @@ number = rd.randint(1, 100)
 
 print("guess a number between 1 and 100")
 while True:
-    guess = int(input())
+    guess = input()
     if guess < number:
         print("too low ! try again !")
     elif guess > number:
