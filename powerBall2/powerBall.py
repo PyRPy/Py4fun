@@ -2,6 +2,9 @@
 # this example is adapted from the book listed above
 from tkinter import *
 from random import sample
+import datetime
+today = str(datetime.date.today())
+
 window = Tk()
 img = PhotoImage(file = 'powerBall.png')
 
@@ -85,6 +88,7 @@ def saveNums():
 				  str(nums_white[2]) + ' ' + str(nums_white[3]) + ' ' + \
 				  str(nums_white[4]) + ' ' + str(nums_red[0])
 	
+	nums_string = today + ': ' + nums_string
 	file = open("numbers.txt", 'a')
 	file.write(nums_string + '\n')
 
