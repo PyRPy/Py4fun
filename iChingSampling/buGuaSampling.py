@@ -3,6 +3,7 @@
 import random
 from gua64 import *
 
+
 # there are 50 straws / sticks in original boundle
 boundleA = [x + 1 for x in range(50)]
 
@@ -85,8 +86,19 @@ print(str(gua_yin_yang))
 ## to define a dictionary to map the 'gua yin yang' to number of 'gua'
 print(gua_dict['[0, 0, 0, 0, 0, 0]'])
 
+## read the text line by line and print it
+# import pyttsx3
+
+# engine = pyttsx3.init()
+# voices = engine.getProperty('voices')
+# engine.setProperty('voice', voices[25].id)
+
 ## print text for the 'gua'
-f = open(gua_dict['[0, 0, 0, 0, 0, 0]'], "r")
-for line in f:
-    print(line)
-f.close()
+# f = open(gua_dict['[0, 0, 0, 0, 0, 0]'], "r")
+# for line in f:
+#     print(line)
+#     # engine.say(line)
+#     # engine.runAndWait()
+#     readYao(line)
+
+# f.close()

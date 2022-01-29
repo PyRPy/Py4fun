@@ -2,6 +2,7 @@
 
 import random
 from gua64 import *
+from readGua import *
 
 # there are 50 straws / sticks in original boundle
 boundleA = [x + 1 for x in range(50)]
@@ -89,4 +90,5 @@ print(gua_dict['[0, 0, 0, 0, 0, 0]'])
 f = open(gua_dict['[0, 0, 0, 0, 0, 0]'], "r")
 for line in f:
     print(line)
+    readYao(line)
 f.close()
