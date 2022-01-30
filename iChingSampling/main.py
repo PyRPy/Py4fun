@@ -1,7 +1,7 @@
 # this program will simulate how to choose 6 'yao' in i-ching
 
 import random
-from gua64 import *
+from gua64keys import *
 from readGua import *
 
 # there are 50 straws / sticks in original boundle
@@ -84,11 +84,11 @@ gua_yin_yang = list(map(change, gua))
 print(str(gua_yin_yang))
 
 ## to define a dictionary to map the 'gua yin yang' to number of 'gua'
-print(gua_dict['[0, 0, 0, 0, 0, 0]'])
-
+print(gua_dict['[1, 1, 1, 0, 1, 0]'])
+filepath = 'guaText/' + gua_dict['[1, 1, 1, 0, 1, 0]']
 ## print text for the 'gua'
-f = open(gua_dict['[0, 0, 0, 0, 0, 0]'], "r")
+f = open(filepath, "r")
 for line in f:
     print(line)
-    readYao(line)
+    # readYao(line)
 f.close()
