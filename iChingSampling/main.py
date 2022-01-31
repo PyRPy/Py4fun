@@ -71,7 +71,7 @@ for i in range(6):
     yao = buYao(boundleA)
     gua.append(yao)
 
-print(gua)
+# print(gua)
 
 # transform the 'gua' to '0 1 0 1 1 1' format
 def change(num):
@@ -81,14 +81,14 @@ def change(num):
         return 0
 gua_yin_yang = list(map(change, gua))
 
-print(str(gua_yin_yang))
+# print(str(gua_yin_yang))
 
 ## to define a dictionary to map the 'gua yin yang' to number of 'gua'
-print(gua_dict['[1, 1, 1, 0, 1, 0]'])
-filepath = 'guaText/' + gua_dict['[1, 1, 1, 0, 1, 0]']
+# print(gua_dict['[1, 1, 1, 0, 1, 0]'])
+filepath = 'guaText/' + gua_dict[str(gua_yin_yang)]
 ## print text for the 'gua'
 f = open(filepath, "r")
 for line in f:
     print(line)
-    # readYao(line)
+    readYao(line)
 f.close()
