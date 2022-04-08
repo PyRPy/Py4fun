@@ -1,6 +1,7 @@
 # https://runestone.academy/ns/books/published/thinkcspy/GUIandEventDrivenProgramming/11_gui_program_example.html
 """
 Implement the basic layout of a Whack-a-mole game.
+STEP 2 : create moles in a 'matrix'
 """
 # =====================================================================
 import tkinter as tk
