@@ -16,4 +16,5 @@ simple_calculator/
 
 How to run the program 
 	> python -m scripts.run in the main folder simple_calculator 
+	> python -m tests.test_operations in the tests folder
 	will add setup.py, so the calculator can be installed as a package 
